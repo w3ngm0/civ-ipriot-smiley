@@ -3,6 +3,7 @@ from blinkable import Blinkable
 from smiley import Smiley
 
 
+
 class Happy(Smiley, Blinkable):
     """
    Provides a Smiley with a happy expression
@@ -28,7 +29,7 @@ class Happy(Smiley, Blinkable):
         """
         eyes = [10, 13, 18, 21]
         for pixel in eyes:
-            self.pixels[pixel] = self.BLANK if wide_open else self.YELLOW
+            self.pixels[pixel] = self.BLANK if wide_open else self.my_complexion
 
     def blink(self, delay=0.25):
         """
