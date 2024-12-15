@@ -28,7 +28,7 @@ class Sick(Smiley, Blinkable):
             if wide_open:
                 eyes = self.BLANK
             else:
-                eyes = self.my_complexion
+                eyes = self.complexion()
             self.pixels[pixel] = eyes
 
     def blink(self, delay=0.25):

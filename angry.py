@@ -28,12 +28,12 @@ class Angry(Smiley, Blinkable):
             if wide_open:
                 eyes = self.BLANK
             else:
-                eyes = self.my_complexion
+                eyes = self.complexion()
             self.pixels[pixel] = eyes
 
     def blink(self, delay=0.25):
         """
-       Blinks the smiley's eyes once
+        Blinks the smiley's eyes once
 
         :param delay: Delay between blinks (in seconds)
         """
